@@ -1,54 +1,68 @@
 # Save Render Scale | 保存渲染比例
 
-自动保存并恢复渲染比例（Render Scale）设置，告别每次登录都要手动调回的烦恼。
-Automatically saves and restores your Render Scale setting, so you never have to set it back manually after login.
+为多开玩家设计：每个账号记住自己的渲染比例，登录时自动恢复。
+Built for multiboxers: each account remembers its own Render Scale and restores it automatically on login.
 
 ---
 
 ## 简体中文
 
-### 这是什么？
+### 为什么需要它？
 
-《魔兽世界》经常遗忘或重置渲染比例设置——尤其是在版本更新之后。本插件会在你调整渲染比例时自动记录，并在下次登录时自动恢复，全程无需任何手动操作。
+《魔兽世界》客户端的渲染比例（Render Scale）是全局设置，**不区分账号保存**——无论哪个角色修改了它，客户端只记住最后一次的值。
+
+对多开玩家来说这很折磨：大号想要高画质，小号想要低渲染比例换取多开流畅度，但每次登录都要手动来回改，忘了改还会互相覆盖。
+
+### 它做了什么
+
+本插件按账号分别记录渲染比例。登录任意角色时，自动恢复该账号上次使用的渲染比例：
+
+- 小号永远是低渲染比例——多开更流畅、占用更低
+- 大号永远是高渲染比例——画质不受影响
 
 ### 功能特性
 
-- 自动记录：每次修改渲染比例，立即保存
-- 自动恢复：登录时自动应用上次的设置
-- 无需配置：装好即用，没有选项面板，没有命令
+- 按账号独立保存，互不覆盖
+- 登录时自动恢复，无需任何手动操作
+- 零配置：装好即用，没有选项面板，没有命令
 - 轻量零负担：单文件、无库依赖
 
 ### 工作方式
 
-1. 你在 系统设置 → 图形 中调整渲染比例
-2. 插件立即保存该数值
-3. 下次登录时自动应用
+1. 你在 系统设置 → 图形 中调整渲染比例，插件立即为当前账号保存该数值
+2. 下次登录该账号的任意角色，自动应用
 
 ### 兼容性
 
 - 适用于《魔兽世界》12.0 / 12.0.1 / 12.1
-- 设置按账号独立保存，互不干扰
 
 ## English
 
-### What is this?
+### Why do I need it?
 
-World of Warcraft often forgets or resets the Render Scale setting — especially after game updates. This addon records it whenever you change it, and restores it automatically on your next login. No manual steps needed.
+The Render Scale in World of Warcraft is a client-wide setting — it is **not saved per account**. No matter which character changes it, the client only remembers the last value used.
+
+That's a pain for multiboxers: you want high quality on your main but low Render Scale on your alts for smoother performance, yet you have to change it back and forth manually every login — and forget once, and one account's setting overwrites the other's.
+
+### What it does
+
+This addon records the Render Scale per account. Whenever you log in, it automatically restores the value that account last used:
+
+- Alts always run at low Render Scale — smoother and lighter when multiboxing
+- Your main always runs at high Render Scale — image quality untouched
 
 ### Features
 
-- Auto-save: the value is recorded the moment you change it
-- Auto-restore: reapplied automatically on every login
+- Saved per account, never overwriting each other
+- Restored automatically on login — no manual steps
 - Zero configuration: works out of the box — no options panel, no commands
 - Lightweight: single file, no libraries
 
 ### How it works
 
-1. You adjust Render Scale in System Settings → Graphics
-2. The addon saves the value instantly
-3. On your next login, the saved value is applied automatically
+1. You adjust Render Scale in System Settings → Graphics, and the addon saves it for the current account instantly
+2. On your next login with that account (any character), it is applied automatically
 
 ### Compatibility
 
 - For World of Warcraft 12.0 / 12.0.1 / 12.1
-- Saved per account, without interfering with each other
