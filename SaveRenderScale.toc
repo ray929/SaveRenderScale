@@ -1,0 +1,10 @@
+## Interface: 120000, 120001, 120100
+## Title: Save Render Scale
+## Notes: Save and apply render scale per Battle.net account
+## Title-zhCN: 保存渲染比例
+## Notes-zhCN: 为战网账号保存并应用渲染比例
+## Version: 1.0.0
+## SavedVariables: SaveRenderScaleDB
+## IconTexture: Interface\Icons\INV_Misc_Spyglass_03
+
+SaveRenderScale.lua
